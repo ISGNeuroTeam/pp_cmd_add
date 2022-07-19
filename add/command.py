@@ -37,7 +37,7 @@ class AddCommand(BaseCommand):
         if result_column_name != "":
             df[result_column_name] = df[first_column] + df[second_column]
             self.logger.debug(f"New column name: {result_column_name}")
-            self.log_progress("Addition is complete.", stage=1, total_stages=2)
+            self.log_progress("Addition is completed.", stage=1, total_stages=2)
             return df
         else:
             addition_df = pd.DataFrame(
@@ -46,5 +46,5 @@ class AddCommand(BaseCommand):
                     + df[second_column].values
                 }
             )
-            self.log_progress("Addition is complete.", stage=1, total_stages=2)
+            self.log_progress("Addition is completed.", stage=1, total_stages=2)
             return addition_df
