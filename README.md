@@ -2,7 +2,7 @@
 Postprocessing command "add"
 
 Usage example:
-`... | add`
+`... | add a b as c`
 
 ## Getting started
 ###  Prerequisites
@@ -26,5 +26,5 @@ Use `pp` to test add command:
 pp
 Storage directory is /tmp/pp_cmd_test/storage
 Commmands directory is /tmp/pp_cmd_test/pp_cmd
-query: | otl_v1 <# makeresults count=100 #> |  add 
+query: | otl_v1 <# makeresults count=100 | eval a = 1 | eval b = 1 #> |  add a b as c
 ```

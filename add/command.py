@@ -48,4 +48,3 @@ class AddCommand(BaseCommand):
             )
             self.log_progress("Addition is complete.", stage=1, total_stages=2)
             return addition_df
-        # Add description of what going on for log progress
