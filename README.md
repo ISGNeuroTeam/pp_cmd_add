@@ -1,6 +1,10 @@
 # pp_cmd_add
 Postprocessing command "add"
 
+Make addition of two columns of dataframe
+
+a, b - columns or numbers must be added
+
 Usage example:
 `... | add a b as c`
 
